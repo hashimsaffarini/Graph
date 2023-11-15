@@ -8,9 +8,6 @@ public static void printDfs(int[][] arr, int n, int source) {
             list[a[0]].add(a[1]);
             list[a[1]].add(a[0]);
         }
-        for (List<Integer> ll : list) {
-            System.out.println(ll);
-        }
 
         dfs(source, list, visit);
 
